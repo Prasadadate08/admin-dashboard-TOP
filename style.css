@@ -1,11 +1,19 @@
 
 
 body {
-    background-color: lightgray;
+    background-color: #e2e8f0;
 }
 
 .header {
-    background-color: white;
+    background-color: #ffffff;
     padding: 10px;
 }
 
+.sidebar {
+    background-color: #1992d4;
+    padding: 10px;
+    color: white;
+    li {
+        list-style: none;
+    }
+}
