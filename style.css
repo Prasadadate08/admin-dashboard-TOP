@@ -17,3 +17,17 @@ body {
         list-style: none;
     }
 }
+
+.projects{
+    background-color: white;
+    border-left: 8px solid orange;
+    border-radius: 6px;
+}
+
+.announcements h2 + div {
+    background-color: white;
+}
+
+.trending h2 + div{
+    background-color: white;
+}
