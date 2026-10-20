@@ -25,8 +25,100 @@ body {
 
 .header {
     background-color: #ffffff;
-    padding: 10px;
+    padding:0px 30px;
     grid-column: 2/3;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr 1fr;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.header .top-row {
+    /* border-radius: 10px; */
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 0.1fr 0.4fr;
+    align-items: center;
+    margin: 0px 0px 10px;
+}
+
+.header .search{
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    align-items: center;
+    margin-right: 120px;
+}
+
+.search input{
+background-color: lightgray;
+opacity: 0.3;
+border: 1px solid;
+border-radius: 14px;
+min-height: 30px;
+min-width: 650px;
+margin-left: 20px;
+}
+.header .top-row .user-logo {
+    background-color: #facc15;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+}
+
+.header .user-logo {
+    background-color: #facc15;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+}
+
+.header .user-logo img {
+    border-radius: 100%;
+}
+
+.header .user-name{
+    min-width: 200px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 30px;
+}
+
+.header .notification{
+    margin-right: 20px;
+}
+
+.header .user-greeting  :nth-child(1){
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.header .user-greeting  :nth-child(2){
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.header .bottom-row{
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 0.1fr 0.7fr 0.4fr;
+    align-items: center;
+}
+
+.bottom-row button {
+    background-color: #1992d4;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    min-width: 90px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid;
+    margin: 0px 10px ;
+
 }
 
 .projects-content{
@@ -57,7 +149,6 @@ body {
     min-height: 50px;
 }
 
-
 .sidebar ul {
     display: grid;
     /* gap: 20px; */
@@ -77,7 +168,7 @@ body {
     margin-bottom: 50px;
 }
 
-.sidebar ul, img {
+.sidebar .dashboard,ul img {
 filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(13%) hue-rotate(237deg) brightness(104%) contrast(104%);
 }
 
@@ -97,6 +188,5 @@ filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(13%) hue-r
     background-color: white;
     padding: 20px;
 }
-
 
 
